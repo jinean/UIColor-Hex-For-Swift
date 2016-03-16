@@ -1,11 +1,9 @@
-//
-//  JNColorHex.swift
-//  JNColorHex
+
 //
 //  Created by liyan on 15/7/13.
 //  Copyright (c) 2015年 liyan. All rights reserved.
 //
-
+import UIKit
 extension UIColor
 {
     class func getColor(hexColor: String) -> UIColor? {
@@ -38,7 +36,7 @@ extension UIColor
         NSScanner.localizedScannerWithString(hexColor.substringWithRange(rangeNSRange_)).scanHexInt(&blueInt_)
         
         return UIColor(red: CGFloat(redInt_) / 255.0, green: CGFloat(greenInt_) / 255.0, blue: CGFloat(blueInt_) / 255.0, alpha: 1.0)
-
+        
     }
-
+    
 }
